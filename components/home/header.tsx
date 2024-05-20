@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import { FaBars } from "react-icons/fa6";
+import Sidebar from "../sidebar";
+
 const header = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div>
-      <div className="flex p-10 -">
+      <div className="flex py-5 justify-between ">
         <div className="w-1/5 h-8 bg-slate-600 flex"></div>
 
-        <div className=" hidden lg:flex lg:gap-x-7 md:gap-x-5 sm:gap-x-4 gap-x-1 px-4 md:px-6 lg:px-10 w-full text-lg md:text-xl justify-end items-center">
+        <div className="hidden lg:flex lg:gap-x-7 md:gap-x-5 sm:gap-x-4 gap-x-1 px-4 md:px-6 lg:px-10 w-full text-lg md:text-xl justify-end items-center font-poppins">
           <Link href="flex">Home</Link>
           <Link href="flex">Price</Link>
           <Link href="flex">App</Link>
@@ -20,6 +25,8 @@ const header = () => {
             </Link>
           </button>
         </div>
+
+        <Sidebar />
       </div>
     </div>
   );

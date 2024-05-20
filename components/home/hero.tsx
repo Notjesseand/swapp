@@ -2,8 +2,8 @@ import React from "react";
 
 const hero = () => {
   return (
-    <div className="flex px-10 h-[80vh] pb-14">
-      <div className=" items-center gap-8 w-1/2 flex">
+    <div className="lg:flex h-[80vh] pt-12">
+      <div className=" items-center gap-8 lg:w-1/2 flex">
         <div>
           <p className="text-5xl w-4/5 font-bold leading-[50px]">
             Pay with <span className="text-blue-500"> Swapp</span>. Make all
@@ -23,7 +23,7 @@ const hero = () => {
           </div>
         </div>
       </div>
-      <div className=" w-1/2 flex items-center">
+      <div className=" md:w-1/2 flex items-center">
         <div className="w-96 h-96 bg-purple-400 mx-auto flex items-center"></div>
       </div>
     </div>
