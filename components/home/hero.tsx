@@ -2,7 +2,7 @@ import React from "react";
 
 const hero = () => {
   return (
-    <div className="lg:flex h-[80vh] pt-12">
+    <div className="lg:flex min-h-screen pb-7 pt-[17vh] px-8 md:px-16 items-center space-y-6">
       <div className=" items-center gap-8 lg:w-1/2 flex">
         <div>
           <p className="text-5xl w-4/5 font-bold leading-[50px]">

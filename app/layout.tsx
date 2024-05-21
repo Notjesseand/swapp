@@ -29,6 +29,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
+        <link
           href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Poppins&display=swap"
           rel="stylesheet"
         />
