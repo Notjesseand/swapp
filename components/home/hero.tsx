@@ -13,7 +13,7 @@ const hero = () => {
             {" "}
             Fast and secure way to purchase or exchange 150+ cryptocurrencies
           </p>
-          <div className="flex gap-x-5 pt-8 font-montserrat font-bold">
+          <div className="flex gap-x-5 pt-8 font-montserrat">
             <button className="px-6 py-2.5 bg-blue-600 text-white rounded-md hover:bg-blue-500">
               Get Started
             </button>

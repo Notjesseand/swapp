@@ -8,7 +8,7 @@ const header = () => {
 
   return (
     // <div className=" bg-pink-300">
-    <div className="flex py-5 justify-between fixed w-full px-8 md:px-16 bg-white border-b border-orange-600">
+    <div className="flex py-5 justify-between fixed w-full px-8 md:px-16 bg-white border-b border-orange-100">
       <div className="w-1/5 h-8 bg-slate-600 flex"></div>
 
       <div className="flex lg:hidden items-center justify-center">
