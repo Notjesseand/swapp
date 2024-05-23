@@ -4,7 +4,9 @@ import Header from "@/components/home/header";
 import Hero from "@/components/home/hero";
 import GetStarted from "@/components/home/getStarted";
 import Portfolio from "@/components/home/portfolio";
+import Customers from "@/components/home/customers";
 import Footer from "@/components/footer";
+import App from "@/components/home/app";
 
 export default function Page() {
   return (
@@ -14,7 +16,9 @@ export default function Page() {
         <Hero />
       </div>
       <GetStarted />
-      <Portfolio />,
+      <Portfolio />
+      <Customers />
+      <App />
       <Footer />
     </div>
   );

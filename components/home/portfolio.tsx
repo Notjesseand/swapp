@@ -79,7 +79,7 @@ const portfolio = () => {
                 Mobile apps
               </p>
               <p className="font-montserrat text-slate-400 text-lg mt-3">
-                Stay on top of the markets with the Tendex app for Android or
+                Stay on top of the markets with the Swapp app for Android or
                 iOS.
               </p>
             </div>
@@ -148,7 +148,7 @@ const portfolio = () => {
           </div>
         </div>
         <div className="pt-8">
-          <p className="flex text-3xl justify-center pt-8 md:pt-16 font-semibold">
+          <p className="flex text-2xl md:text-3xl justify-center pt-8 md:pt-16 font-semibold px-6">
             Trusted by over 100,000 users
           </p>
         </div>
