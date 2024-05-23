@@ -2,7 +2,7 @@ import React from "react";
 
 const footer = () => {
   return (
-    <div className="bg-[#1F2544] text-white pt-8 md:pt-12 lg:pt-16 px-7 md:px-16 pb-8">
+    <div className="bg-[#1F2544] text-white pt-8 md:pt-12 lg:pt-16 px-7 md:px-16 pb-8 mt-14">
       <div className=" lg:flex justify-between space-y-3">
         <div className=" lg:w-2/5 ">
           <p className="text-slate-300 text-xl font-semibold">Swapp</p>

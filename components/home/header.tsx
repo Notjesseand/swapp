@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaBars } from "react-icons/fa6";
 import Sidebar from "../sidebar";
 
-const header = () => {
+const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -34,4 +34,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;
