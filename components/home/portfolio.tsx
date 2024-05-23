@@ -98,7 +98,7 @@ const portfolio = () => {
 
         {/* mobile, desktop, api */}
 
-        <div className="grid lg:grid-cols-3 px-14 lg:px-24 gap-x-6 pt-6">
+        <div className="grid lg:grid-cols-3 px-8 md:px-14 lg:px-24 gap-x-6 pt-6">
           <div className="w-full pt-10">
             <BsPhone className="h-11 w-11 flex ml-2 text-blue-800" />
             <p className="text-xl font-semibold font-montserrat pt-7">Mobile</p>

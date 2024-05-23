@@ -29,14 +29,14 @@ const customers = () => {
 
       {/* most trusted */}
       <div className="text-center pt-40">
-        <p className="text-3xl text-blue-950 font-montserrat font-semibold">
+        <p className="text-3xl text-blue-950 font-montserrat font-semibold px-5">
           The most trusted cryptocurrency platform
         </p>
-        <p className="text-lg text-slate-500 mt-2">
+        <p className="text-lg text-slate-500 mt-2 px-8">
           Here are a few reasons why you should choose Swapp
         </p>
       </div>
-      <div className="grid lg:grid-cols-3 px-14 lg:px-24 gap-x-6 pt-6">
+      <div className="grid lg:grid-cols-3 px-8 md:px-14 lg:px-24 gap-x-6 pt-6">
         <div className="w-full pt-10">
           <GoShieldCheck className="h-11 w-11 flex ml-2 text-blue-800" />
           <p className="text-xl font-semibold font-montserrat pt-7">

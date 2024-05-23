@@ -12,7 +12,7 @@ const blog = () => {
           <img
             src="https://res.cloudinary.com/dv62ty87r/image/upload/v1716453422/2_ryviea.jpg"
             alt=""
-            className="rounded-md w-3/4 md:w-full mx-auto"
+            className="rounded-md md:w-full mx-auto w-5/6"
           />
           <p className="mt-2 text-lg ">Why does Litecoin need MimbleWimble?</p>
           <Link
@@ -26,7 +26,7 @@ const blog = () => {
           <img
             src="https://res.cloudinary.com/dv62ty87r/image/upload/v1716453383/1_ajvpwg.jpg"
             alt=""
-            className="rounded-md w-3/4 md:w-full mx-auto"
+            className="rounded-md md:w-full mx-auto w-5/6"
           />
           <p className="mt-2 text-lg "> How to securely store wallet seeds?</p>
           <Link
@@ -40,7 +40,7 @@ const blog = () => {
           <img
             src="https://res.cloudinary.com/dv62ty87r/image/upload/v1716453781/3_qfnwlb.jpg"
             alt=""
-            className="rounded-md w-3/4 md:w-full mx-auto"
+            className="rounded-md w-5/6 md:w-full mx-auto"
           />
           <p className="mt-2 text-lg "> Exclusive Interview With Of Litecoin</p>
           <Link
