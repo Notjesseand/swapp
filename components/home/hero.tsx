@@ -9,7 +9,7 @@ const hero = () => {
             Pay with <span className="text-blue-500"> Swapp</span>. Make all
             your payments in Swapp!
           </p>
-          <p className="text-2xl text-gray-500 mt-2 md:w-3/4">
+          <p className="text-xl sm:text-2xl text-gray-500 mt-2 md:w-3/4">
             {" "}
             Fast and secure way to purchase or exchange 150+ cryptocurrencies
           </p>
