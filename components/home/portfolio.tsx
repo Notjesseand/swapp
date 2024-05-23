@@ -131,7 +131,7 @@ const portfolio = () => {
             </Link>
           </div>
           <div className="w-full pt-10">
-            <IoServer className="h-11 w-11 flex ml-2 text-blue-800" />
+            <IoServer className="h-11 w-11 flex ml-0 text-blue-800" />
             <p className="text-xl font-semibold font-montserrat pt-7">API</p>
             <p className="pt-5 text-lg text-slate-500 font-montserrat">
               The Swapp API is designed to provide an easy and efficient way to

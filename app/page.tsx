@@ -5,8 +5,10 @@ import Hero from "@/components/home/hero";
 import GetStarted from "@/components/home/getStarted";
 import Portfolio from "@/components/home/portfolio";
 import Customers from "@/components/home/customers";
-import Footer from "@/components/footer";
 import App from "@/components/home/app";
+import Blog from "@/components/home/blog";
+import GetInTouch from "@/components/home/getInTouch";
+import Footer from "@/components/footer";
 
 export default function Page() {
   return (
@@ -19,6 +21,8 @@ export default function Page() {
       <Portfolio />
       <Customers />
       <App />
+      <Blog />
+      <GetInTouch />
       <Footer />
     </div>
   );
