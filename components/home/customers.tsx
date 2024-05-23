@@ -18,7 +18,7 @@ const customers = () => {
         <div className="p-5 flex flex-col justify-center shadow-lg border-t border-[#e9e9e97b]">
           <p className="text-lg font-montserrat text-slate-500">
             Genuinely, one of the best cryptocurrency transfer platforms I ever
-            used and that's high praise
+            used and that&apos;s high praise
           </p>
           <p className="font-semibold text-xl mt-2 text-blue-900">
             Dayvon Bennet
