@@ -4,6 +4,10 @@ import { BsPersonCheck } from "react-icons/bs";
 import { CiLock } from "react-icons/ci";
 import { SiFsecure } from "react-icons/si";
 import { MdOutlinePhoneIphone } from "react-icons/md";
+import { BsPhone } from "react-icons/bs";
+import { RiComputerLine } from "react-icons/ri";
+import { IoServer } from "react-icons/io5";
+import Link from "next/link";
 
 const portfolio = () => {
   return (
@@ -83,14 +87,71 @@ const portfolio = () => {
         </div>
       </div>
       {/* Trade. Anywhere */}
-      <div className="pt-44  ">
+      <div className="pt-44">
         <p className="text-3xl font-montserrat text-center font-semibold">
           Trade. Anywhere
         </p>
-        <p className="text-slate-500 text-lg text-center font-montserrat pt-3">
-          All of our products are ready to go, easy to use and offer great value
-          to any kind of business
+        <p className="text-slate-500 text-lg text-center font-montserrat pt-3 px-7">
+          All of our products are ready to go, easy to use and offer great{" "}
+          <br className="hidden md:block" /> value to any kind of business
         </p>
+
+        {/* mobile, desktop, api */}
+
+        <div className="grid lg:grid-cols-3 px-14 lg:px-24 gap-x-6 pt-6">
+          <div className="w-full pt-10">
+            <BsPhone className="h-11 w-11 flex ml-2 text-blue-800" />
+            <p className="text-xl font-semibold font-montserrat pt-7">Mobile</p>
+            <p className="pt-5 text-lg text-slate-500 font-montserrat">
+              All the power of Swapp&apos;s cryptocurrency exchange, in the palm
+              of your hand. Download the Swapp mobile crypto trading app today
+            </p>
+            <Link
+              href={""}
+              className="border-b-2 border-blue-800 text-blue-800 inline-block pt-6"
+            >
+              read more
+            </Link>
+          </div>
+          <div className="w-full pt-10">
+            <RiComputerLine className="h-11 w-11 flex ml-2 text-blue-800" />
+            <p className="text-xl font-semibold font-montserrat pt-7">
+              Desktop
+            </p>
+            <p className="pt-5 text-lg text-slate-500 font-montserrat">
+              Powerful crypto trading platform for those who mean business. The
+              Swapp crypto trading experience, tailor-made for your Windows or
+              MacOS device.
+            </p>
+            <Link
+              href={""}
+              className="border-b-2 border-blue-800 text-blue-800 inline-block pt-6"
+            >
+              read more
+            </Link>
+          </div>
+          <div className="w-full pt-10">
+            <IoServer className="h-11 w-11 flex ml-2 text-blue-800" />
+            <p className="text-xl font-semibold font-montserrat pt-7">API</p>
+            <p className="pt-5 text-lg text-slate-500 font-montserrat">
+              The Swapp API is designed to provide an easy and efficient way to
+              integrate your trading application into our platform.
+            </p>
+            <Link
+              href={""}
+              className="border-b-2 border-blue-800 text-blue-800 inline-block pt-6"
+            >
+              read more
+            </Link>
+
+            {/* get started */}
+          </div>
+        </div>
+        <div className="pt-8">
+          <p className="flex text-3xl justify-center pt-8 md:pt-16 font-semibold">
+            Trusted by over 100,000 users
+          </p>
+        </div>
       </div>
     </div>
   );

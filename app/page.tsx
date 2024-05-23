@@ -4,6 +4,7 @@ import Header from "@/components/home/header";
 import Hero from "@/components/home/hero";
 import GetStarted from "@/components/home/getStarted";
 import Portfolio from "@/components/home/portfolio";
+import Footer from "@/components/footer";
 
 export default function Page() {
   return (
@@ -13,7 +14,8 @@ export default function Page() {
         <Hero />
       </div>
       <GetStarted />
-      <Portfolio />
+      <Portfolio />,
+      <Footer />
     </div>
   );
 }
