@@ -27,18 +27,18 @@ export default function sidebar() {
             <Link href="/rates" className="flex mx-auto text-lg py-2  ">
               Currencies{" "}
             </Link>
-            <Link href={""} className="flex mx-auto text-lg py-2  ">
+            {/* <Link href={""} className="flex mx-auto text-lg py-2  ">
               App
             </Link>
             <Link href={""} className="flex mx-auto text-lg py-2  ">
               Company{" "}
-            </Link>
-            <Link href={""} className="flex mx-auto text-lg py-2  ">
-              Support
-            </Link>
+            </Link> */}
             <Link href={""} className="flex mx-auto text-lg py-2  ">
               {" "}
               Dashboard
+            </Link>
+            <Link href={""} className="flex mx-auto text-lg py-2  ">
+              Support
             </Link>
           </SheetHeader>
         </SheetContent>

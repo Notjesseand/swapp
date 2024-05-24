@@ -7,7 +7,7 @@ import { IoBriefcaseOutline } from "react-icons/io5";
 
 const getInTouch = () => {
   return (
-    <div className="pt-20 md:pt-28  lg:pt-44 min-h-screen">
+    <div className="pt-10 md:pt-28  lg:pt-36 min-h-screen">
       <p className="text-2xl font-montserrat font-semibold text-center text-blue-900 py-12">
         Get In Touch. Stay in touch.
       </p>
