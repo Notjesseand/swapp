@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { getData } from "@/api/fetchrates";
 
-const hero = () => {
+const Hero = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -50,32 +50,30 @@ const hero = () => {
           {data &&
             // @ts-ignore
             data.slice(0, 5).map((item: any, index: number) => (
-              <div className="">
-                <div
-                  key={index}
-                  className="grid grid-cols-4 gap-x-3 font-montserrat pl-1 text-sm md:text-base border-b border-slate-400 py-4"
+              <div
+                key={index}
+                className="grid grid-cols-4 gap-x-3 font-montserrat pl-1 text-sm md:text-base border-b border-slate-400 py-4"
+              >
+                <p className=" col-span-2 flex items-center">
+                  <img src={item.image} className="h-5 w-5 mr-2" alt="" />
+                  {item.name}{" "}
+                  <span className="text-slate-500 ml-2">{item.symbol}</span>
+                </p>
+                <p className=" pl-1">${item.current_price}</p>
+                <p
+                  className={`pl-1 ${
+                    item.price_change_percentage_24h < 0
+                      ? "text-red-500"
+                      : "text-green-500"
+                  }`}
                 >
-                  <p className=" col-span-2 flex items-center">
-                    <img src={item.image} className="h-5 w-5 mr-2" alt="" />
-                    {item.name}{" "}
-                    <span className="text-slate-500 ml-2">{item.symbol}</span>
-                  </p>
-                  <p className=" pl-1">${item.current_price}</p>
-                  <p
-                    className={`pl-1 ${
-                      item.price_change_percentage_24h < 0
-                        ? "text-red-500"
-                        : "text-green-500"
-                    }`}
-                  >
-                    {item.price_change_percentage_24h}%
-                  </p>
-                  {/*
+                  {item.price_change_percentage_24h}%
+                </p>
+                {/*
                 <p className=" pl-1 hidden md:block">${item.high_24h}</p>
                 <p className=" pl-1 hidden md:block">${item.low_24h}</p> */}
-                  {/* <p className="hidden md:block pl-1">${item.total_volume}</p> */}
-                  {/* <p className="pl-1">${item.market_cap}</p> */}
-                </div>
+                {/* <p className="hidden md:block pl-1">${item.total_volume}</p> */}
+                {/* <p className="pl-1">${item.market_cap}</p> */}
               </div>
             ))}
         </div>
@@ -84,4 +82,4 @@ const hero = () => {
   );
 };
 
-export default hero;
+export default Hero;
