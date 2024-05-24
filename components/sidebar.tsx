@@ -21,10 +21,10 @@ export default function sidebar() {
         </SheetTrigger>
         <SheetContent>
           <SheetHeader className="pt-10">
-            <Link href={""} className="flex mx-auto text-lg py-2  ">
-              Home{" "}
+            <Link href="/" className="flex mx-auto text-lg py-2  ">
+              Home
             </Link>
-            <Link href={""} className="flex mx-auto text-lg py-2  ">
+            <Link href="/rates" className="flex mx-auto text-lg py-2  ">
               Price{" "}
             </Link>
             <Link href={""} className="flex mx-auto text-lg py-2  ">
