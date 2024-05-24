@@ -30,7 +30,7 @@ const Header = () => {
         <Link href="">Dashboard</Link>
 
         <button className="w-28 py-2 bg-blue-600 rounded text-white flex items-center">
-          <Link href="" className="w-full">
+          <Link href="/sign-in" className="w-full">
             Sign in
           </Link>
         </button>

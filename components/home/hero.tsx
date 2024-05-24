@@ -31,9 +31,12 @@ const Hero = () => {
             Fast and secure way to purchase or exchange 150+ cryptocurrencies
           </p>
           <div className="flex gap-x-5 pt-8 font-montserrat justify-center md:justify-normal">
-            <button className="px-6 py-2.5 bg-blue-600 text-white rounded-md hover:bg-blue-500">
+            <Link
+              href="/sign-in"
+              className="px-6 py-2.5 bg-blue-600 text-white rounded-md hover:bg-blue-500 flex items-center"
+            >
               Get Started
-            </button>
+            </Link>
             <Link
               href="/rates"
               className="border border-blue-500 px-5 rounded-md hover:bg-slate-700 hover:text-white flex items-center"
@@ -45,11 +48,13 @@ const Hero = () => {
       </div>
       <div className=" md:w-2/3 flex items-center pb-12">
         <div className=" mx-auto">
-          <div className="grid grid-cols-4 font-montserrat pl-1 text-sm md:text-base border-b border-slate-400 py-4 gap-x-3">
-            <p className="col-span-2">coin</p>
-            <p>price</p>
-            <p className="ml-2">24h</p>
-          </div>
+          {data && (
+            <div className="grid grid-cols-4 font-montserrat pl-1 text-sm md:text-base border-b border-slate-400 py-4 gap-x-3">
+              <p className="col-span-2">coin</p>
+              <p>price</p>
+              <p className="ml-2">24h</p>
+            </div>
+          )}
           {/* @ts-ignore */}
           {data &&
             // @ts-ignore
