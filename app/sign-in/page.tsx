@@ -4,7 +4,7 @@ import Link from "next/link";
 const Page = () => {
   return (
     <div className="w-full min-h-screen flex items-center justify-center">
-      <div className="w-5/6 md:w-1/2 py-8  rounded pt-8">
+      <div className=" w-full md:w-1/2 py-8  rounded pt-8">
         <form action="">
           <div className="w-4/5 md:px-10 mx-auto">
             {/* <p>Email</p> */}
