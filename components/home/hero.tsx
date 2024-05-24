@@ -73,11 +73,6 @@ const Hero = () => {
                 >
                   {item.price_change_percentage_24h}%
                 </p>
-                {/*
-                <p className=" pl-1 hidden md:block">${item.high_24h}</p>
-                <p className=" pl-1 hidden md:block">${item.low_24h}</p> */}
-                {/* <p className="hidden md:block pl-1">${item.total_volume}</p> */}
-                {/* <p className="pl-1">${item.market_cap}</p> */}
               </div>
             ))}
         </div>

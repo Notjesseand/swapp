@@ -18,7 +18,7 @@ const portfolio = () => {
           <br className="hidden md:block" /> today
         </p>
 
-        <p className="text-xl text-center pt-7 text-gray-500 font-montserrat     ">
+        <p className=" text-sm sm:text-lg md:text-xl text-center pt-2 md:pt-7 text-gray-500 font-montserrat">
           Swapp has a variety of features that make it the best place to start
           trading
         </p>
@@ -33,7 +33,7 @@ const portfolio = () => {
               <p className="text-2xl font-semibold text-blue-900">
                 Manage your portfolio
               </p>
-              <p className="font-montserrat text-slate-400 text-lg mt-3">
+              <p className="font-montserrat text-slate-600 text-lg mt-3">
                 Buy and sell popular digital currencies, keep track of them in
                 the one place.
               </p>
@@ -46,7 +46,7 @@ const portfolio = () => {
               <p className="text-2xl font-semibold text-blue-900">
                 Manage your portfolio
               </p>
-              <p className="font-montserrat text-slate-400 text-lg mt-3">
+              <p className="font-montserrat text-slate-600 text-lg mt-3">
                 Invest in cryptocurrency slowly over time by scheduling buys
                 daily, weekly, or monthly.
               </p>
@@ -65,7 +65,7 @@ const portfolio = () => {
               <p className="text-2xl font-semibold text-blue-900">
                 Vault protection
               </p>
-              <p className="font-montserrat text-slate-400 text-lg mt-3">
+              <p className="font-montserrat text-slate-600 text-lg mt-3">
                 For added security, store your funds in a vault with time
                 delayed withdrawals.
               </p>
@@ -78,7 +78,7 @@ const portfolio = () => {
               <p className="text-2xl font-semibold text-blue-900">
                 Mobile apps
               </p>
-              <p className="font-montserrat text-slate-400 text-lg mt-3">
+              <p className="font-montserrat text-slate-600 text-lg mt-3">
                 Stay on top of the markets with the Swapp app for Android or
                 iOS.
               </p>
@@ -91,7 +91,7 @@ const portfolio = () => {
         <p className="text-3xl font-montserrat text-center font-semibold">
           Trade. Anywhere
         </p>
-        <p className="text-slate-500 text-lg text-center font-montserrat pt-3 px-7">
+        <p className="text-slate-600 text-lg text-center font-montserrat pt-3 px-7">
           All of our products are ready to go, easy to use and offer great{" "}
           <br className="hidden md:block" /> value to any kind of business
         </p>
@@ -102,7 +102,7 @@ const portfolio = () => {
           <div className="w-full pt-10">
             <BsPhone className="h-11 w-11 flex ml-2 text-blue-800" />
             <p className="text-xl font-semibold font-montserrat pt-7">Mobile</p>
-            <p className="pt-5 text-lg text-slate-500 font-montserrat">
+            <p className="pt-5 text-lg text-slate-600 font-montserrat">
               All the power of Swapp&apos;s cryptocurrency exchange, in the palm
               of your hand. Download the Swapp mobile crypto trading app today
             </p>
@@ -118,7 +118,7 @@ const portfolio = () => {
             <p className="text-xl font-semibold font-montserrat pt-7">
               Desktop
             </p>
-            <p className="pt-5 text-lg text-slate-500 font-montserrat">
+            <p className="pt-5 text-lg text-slate-600 font-montserrat">
               Powerful crypto trading platform for those who mean business. The
               Swapp crypto trading experience, tailor-made for your Windows or
               MacOS device.
@@ -133,7 +133,7 @@ const portfolio = () => {
           <div className="w-full pt-10">
             <IoServer className="h-11 w-11 flex ml-0 text-blue-800" />
             <p className="text-xl font-semibold font-montserrat pt-7">API</p>
-            <p className="pt-5 text-lg text-slate-500 font-montserrat">
+            <p className="pt-5 text-lg text-slate-600 font-montserrat">
               The Swapp API is designed to provide an easy and efficient way to
               integrate your trading application into our platform.
             </p>
