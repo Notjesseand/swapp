@@ -24,7 +24,8 @@ const Page = () => {
               Sign In
             </button>
             <Link href="" className="mt-4 flex text-blue-800">
-              Don&apos;t have an account? sign up
+              Don&apos;t have an account?{" "}
+              <span className="underline pl-1"> sign up</span>
             </Link>
           </div>
         </form>
