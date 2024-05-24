@@ -16,7 +16,7 @@ const Header = () => {
       </div>
 
       <div className="hidden lg:flex lg:gap-x-7 md:gap-x-5 sm:gap-x-4 gap-x-1 px-4 md:px-6 lg:px-10 text-base md:text-lg items-center font-poppins w-full justify-end">
-        <Link href="">Home</Link>
+        <Link href="/">Home</Link>
         <Link href="/rates">Price</Link>
         <Link href="">App</Link>
         <Link href="">Company</Link>
