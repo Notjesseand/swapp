@@ -7,8 +7,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    // <div className=" bg-pink-300">
-    <div className="flex py-1 sm:py-5 justify-between fixed w-full px-8 md:px-16 bg-white">
+    <div className="flex py-1 sm:py-4 justify-between fixed w-full px-8 md:px-16 bg-white">
       <Link href="/" className="">
         <img
           src="https://res.cloudinary.com/dv62ty87r/image/upload/v1716538239/Premium_Vector___Wolf_tech_modern_simple_logo_icon_ideas-removebg-preview_je6aex.png"
@@ -36,7 +35,6 @@ const Header = () => {
         </button>
       </div>
     </div>
-    // </div>
   );
 };
 
