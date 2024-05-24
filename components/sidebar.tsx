@@ -25,7 +25,7 @@ export default function sidebar() {
               Home
             </Link>
             <Link href="/rates" className="flex mx-auto text-lg py-2  ">
-              Price{" "}
+              Currencies{" "}
             </Link>
             <Link href={""} className="flex mx-auto text-lg py-2  ">
               App

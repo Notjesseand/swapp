@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { getData } from "@/api/fetchrates";
+import Link from "next/link";
 
 const Hero = () => {
   const [data, setData] = useState(null);
@@ -33,13 +34,16 @@ const Hero = () => {
             <button className="px-6 py-2.5 bg-blue-600 text-white rounded-md hover:bg-blue-500">
               Get Started
             </button>
-            <button className="border border-blue-500 px-5 rounded-md hover:bg-slate-700 hover:text-white">
+            <Link
+              href="/rates"
+              className="border border-blue-500 px-5 rounded-md hover:bg-slate-700 hover:text-white flex items-center"
+            >
               Browse Now
-            </button>
+            </Link>
           </div>
         </div>
       </div>
-      <div className=" md:w-2/3 flex items-center">
+      <div className=" md:w-2/3 flex items-center pb-12">
         <div className=" mx-auto">
           <div className="grid grid-cols-4 font-montserrat pl-1 text-sm md:text-base border-b border-slate-400 py-4 gap-x-3">
             <p className="col-span-2">coin</p>
@@ -59,7 +63,7 @@ const Hero = () => {
                   {item.name}{" "}
                   <span className="text-slate-500 ml-2">{item.symbol}</span>
                 </p>
-                <p className=" pl-1">${item.current_price}</p>
+                <p className=" pl-1">${item.current_price.toLocaleString()}</p>
                 <p
                   className={`pl-1 ${
                     item.price_change_percentage_24h < 0

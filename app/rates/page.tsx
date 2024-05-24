@@ -43,7 +43,7 @@ export default function Page() {
             {item.name}{" "}
             <span className="text-slate-500 ml-2">{item.symbol}</span>
           </p>
-          <p className=" pl-1">${item.current_price}</p>
+          <p className=" pl-1">${item.current_price.toLocaleString()}</p>
           <p
             className={`pl-1 ${
               item.price_change_percentage_24h < 0
@@ -53,10 +53,16 @@ export default function Page() {
           >
             {item.price_change_percentage_24h}%
           </p>
-          <p className=" pl-1 hidden md:block">${item.high_24h}</p>
-          <p className=" pl-1 hidden md:block">${item.low_24h}</p>
-          <p className="hidden md:block pl-1">${item.total_volume}</p>
-          <p className="pl-1">${item.market_cap}</p>
+          <p className=" pl-1 hidden md:block">
+            ${item.high_24h.toLocaleString()}
+          </p>
+          <p className=" pl-1 hidden md:block">
+            ${item.low_24h.toLocaleString()}
+          </p>
+          <p className="hidden md:block pl-1">
+            ${item.total_volume.toLocaleString()}
+          </p>
+          <p className="pl-1">${item.market_cap.toLocaleString()}</p>
         </div>
       ))}
     </div>

@@ -16,7 +16,6 @@ const Header = () => {
           className="w-20"
         />
       </Link>
-      {/* <div className="w-1/5 h-8 bg-slate-600 flex"></div> */}
 
       <div className="flex lg:hidden items-center justify-center">
         <Sidebar />
@@ -24,7 +23,7 @@ const Header = () => {
 
       <div className="hidden lg:flex lg:gap-x-7 md:gap-x-5 sm:gap-x-4 gap-x-1 px-4 md:px-6 lg:px-10 text-base md:text-lg items-center font-poppins w-full justify-end">
         <Link href="/">Home</Link>
-        <Link href="/rates">Price</Link>
+        <Link href="/rates">Currencies</Link>
         <Link href="">App</Link>
         <Link href="">Company</Link>
         <Link href="">Support</Link>
