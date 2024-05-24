@@ -16,7 +16,6 @@ export default function Page() {
         console.error(error);
       }
     };
-
     fetchData();
   }, []);
   console.log(data);

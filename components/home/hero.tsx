@@ -1,6 +1,22 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
+import { getData } from "@/api/fetchrates";
 
 const hero = () => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await getData();
+        setData(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
     <div className="lg:flex min-h-screen pb-7 pt-[17vh] px-8 md:px-16 items-center space-y-6">
       <div className=" items-center gap-8 lg:w-1/2 flex">
@@ -23,8 +39,46 @@ const hero = () => {
           </div>
         </div>
       </div>
-      <div className=" md:w-1/2 flex items-center">
-        <div className="w-96 h-96 bg-purple-400 mx-auto flex items-center"></div>
+      <div className=" md:w-2/3 flex items-center">
+        <div className=" mx-auto">
+          <div className="grid grid-cols-4 font-montserrat pl-1 text-sm md:text-base border-b border-slate-400 py-4 gap-x-3">
+            <p className="col-span-2">coin</p>
+            <p>price</p>
+            <p className="ml-2">24h</p>
+          </div>
+          {/* @ts-ignore */}
+          {data &&
+            // @ts-ignore
+            data.slice(0, 5).map((item: any, index: number) => (
+              <div className="">
+                <div
+                  key={index}
+                  className="grid grid-cols-4 gap-x-3 font-montserrat pl-1 text-sm md:text-base border-b border-slate-400 py-4"
+                >
+                  <p className=" col-span-2 flex items-center">
+                    <img src={item.image} className="h-5 w-5 mr-2" alt="" />
+                    {item.name}{" "}
+                    <span className="text-slate-500 ml-2">{item.symbol}</span>
+                  </p>
+                  <p className=" pl-1">${item.current_price}</p>
+                  <p
+                    className={`pl-1 ${
+                      item.price_change_percentage_24h < 0
+                        ? "text-red-500"
+                        : "text-green-500"
+                    }`}
+                  >
+                    {item.price_change_percentage_24h}%
+                  </p>
+                  {/*
+                <p className=" pl-1 hidden md:block">${item.high_24h}</p>
+                <p className=" pl-1 hidden md:block">${item.low_24h}</p> */}
+                  {/* <p className="hidden md:block pl-1">${item.total_volume}</p> */}
+                  {/* <p className="pl-1">${item.market_cap}</p> */}
+                </div>
+              </div>
+            ))}
+        </div>
       </div>
     </div>
   );
