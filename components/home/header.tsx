@@ -15,13 +15,13 @@ const Header = () => {
         <Sidebar />
       </div>
 
-      <div className="hidden lg:flex lg:gap-x-7 md:gap-x-5 sm:gap-x-4 gap-x-1 px-4 md:px-6 lg:px-10 text-lg md:text-xl items-center font-poppins w-full justify-end">
-        <Link href="flex">Home</Link>
-        <Link href="flex">Price</Link>
-        <Link href="flex">App</Link>
-        <Link href="flex">Company</Link>
-        <Link href="flex">Support</Link>
-        <Link href="flex">Dashboard</Link>
+      <div className="hidden lg:flex lg:gap-x-7 md:gap-x-5 sm:gap-x-4 gap-x-1 px-4 md:px-6 lg:px-10 text-base md:text-lg items-center font-poppins w-full justify-end">
+        <Link href="">Home</Link>
+        <Link href="/rates">Price</Link>
+        <Link href="">App</Link>
+        <Link href="">Company</Link>
+        <Link href="">Support</Link>
+        <Link href="">Dashboard</Link>
 
         <button className="w-28 py-2 bg-blue-600 rounded text-white flex items-center">
           <Link href="" className="w-full">
